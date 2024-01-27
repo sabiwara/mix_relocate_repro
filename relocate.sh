@@ -12,6 +12,7 @@ localmix="$localelixir/bin/elixir -S $localelixir/bin/mix"
 $localmix compile
 rm -rf /tmp/relocated
 
+# does not recompile if we use cp -pR
 cp -R . /tmp/relocated
 
 cd /tmp/relocated

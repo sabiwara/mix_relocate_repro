@@ -58,3 +58,7 @@ and often shows a difference of `1` between `sources` and `targets` timestamps:
     1706324072}
  ]}
 ```
+
+This bug does not happen when copying with `cp -pR` (preserves modification
+time), so it is probably because `cp` does not create all files with the exact
+same timestamp.
